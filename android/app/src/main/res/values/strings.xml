@@ -1,0 +1,5 @@
+<resources>
+    <string name="mapbox_access_token">pk.eyJ1IjoiamJvdGhhMDIzIiwiYSI6ImNtM3pxcjNsYjA3NDEya3NnZm9lYmtkb2UifQ.T13e49VN3umsmQ4JDBO5Lw</string>
+    <string name="google_maps_key">AIzaSyC510WeL0ZoesbCFNFuTaOPN0jR8DaFKRs</string>
+
+</resources>

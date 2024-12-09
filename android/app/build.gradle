@@ -1,0 +1,42 @@
+plugins {
+    id "com.android.application"
+    id "com.google.gms.google-services" // FlutterFire Configuration
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin" // Must be applied after other plugins
+}
+
+android {
+    namespace = "com.example.fir_quest"
+    compileSdk = 34 // Replace with flutter.compileSdkVersion if defined
+
+    ndkVersion = "25.1.8937393"
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    defaultConfig {
+        applicationId = "com.example.fir_quest"
+        minSdk = 29
+        targetSdk = 33 // Replace with flutter.targetSdkVersion if defined
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+
+        multiDexEnabled = true // Enable MultiDex if needed
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug // Replace with release keys for production
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
